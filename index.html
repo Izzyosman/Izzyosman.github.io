@@ -1,79 +1,124 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="description" content="My Simple Portfolio" />
-    <title>My Portfolio</title>
-    <style>
-      body {
-        background-color: pink;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-      .container {
-        padding: 50px;
-      }
-
-      button {
-        background-color: #ff69b4;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        margin: 10px;
-      }
-
-      button:hover {
-        background-color: #ff1493;
-      }
-    </style>
-  </head>
-  <body>
+  <!-- NAVIGATION -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <button onclick="showName()">Name</button>
-      <button onclick="showSkills()">Skills</button>
-      <button onclick="showProjects()">Projects</button>
-      <div id="content" style="display: none"></div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Isir Osman</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+                      <a href="#page-top"></a>
+                    </li>
+                      <li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar -->
+
+  <!-- HEADER -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-offset-2 text-center">
+            <h1 class="intro-heading">Isir osman</h1>
+            <p class="intro-text">Dynamic professional passionate about technology, development, and innovation.
+            </p>
+            <a href="#about" class="btn btn-default page-scroll">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-offset-2 text-center">
+          <h2 class="section-heading">About</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <p class="lead">I'm an experienced professional with expertise in data analysis and project management. Currently a student of
+            Hackbright’s software engineering program learning full stack web development and computer science fundamentals.
+            Seeking a career in tech. Skills: Python, JavaScript, HTML, CSS, SQL, Command Line, Git, GitHub, PostgreSQL <a href="http://startupsum.com/"><span><strong>startupsum</strong></span></a></p>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-offset-2 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+        </div>
+      </div>  
+      
+<!-- Portfolio -->
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div></div>
+            
+        
+
+      
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-offset-2 text-center">
+          <h2 class="section-heading">Contact</h2>
+          <p class="lead">Hello, let's talk</p>
+        </div>
+
+        <!-- Social Media Contact-->
+        <div class="social text-center">
+          <ul>
+            <li><a href="https://twitter.com"><i class="fa fa-3x fa-twitter"></i></a></li>
+
+            <li><a href="https://github.com"><i class="fa fa-3x fa-github"></i></a></li>
+
+            <li><a href="#"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></a></i>
+
+            
+          </ul>
+        </div>
+
+
+      </div>
     </div>
 
-    <script>
-      function showName() {
-        document.getElementById("content").style.display = "block";
-        document.getElementById("content").innerHTML =
-          "<p>My Name: Your Name</p>";
-      }
+  </section>
 
-      function showSkills() {
-        document.getElementById("content").style.display = "block";
-        document.getElementById("content").innerHTML =
-          "<p>My Skills: HTML, CSS, JavaScript, etc.</p>";
-      }
+  <section id="footer">
+    <p class="text-center">Created by Audrey</p>
+  </section>
 
-      function showProjects() {
-        document.getElementById("content").style.display = "block";
-        document.getElementById("content").innerHTML =
-          "<p>My Projects: Project 1, Project 2, etc.</p>";
-      }
 
-      <div style="position: relative; padding-bottom: 48.12500000000001%; height: 0;">
-        <iframe
-          src="https://www.loom.com/embed/1bdd2807ae38435fa87cddfa5452d14f?sid=e747c47e-33ab-4b98-b31d-d6a1026174d4"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-        ></iframe>
-      </div>;
-    </script>
-  </body>
-</html>
-
-<head>
-  <!-- ... other head elements ... -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+  
