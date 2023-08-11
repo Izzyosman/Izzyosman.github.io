@@ -1,27 +1,27 @@
-HTML CSSResult Skip Results Iframe
 /**************************TAG SELECTORS**************************/
 /*
-Bypass default margins by mannually setting them.
-Set to 0 to fill out area of div.
+Bypass default margins by manually setting them.
+Set to 0 to fill out the area of the div.
 */
-h1{
-  margin: 0;
-}
-
-body {
-  background-color: #dff4f3;
-  margin: 0;
-}
-hr{
-  border-style: none;
-  border-top-style: dotted;
-  border-color: purple;
-  border-width: 5px;
-  width: 3%;
-}
-
-div{
-  background-color: #a4ebf3;
-}
-
-/**************************CLASS SELECTORS**************************/
+h1 {
+    margin: 0;
+  }
+  
+  body {
+    background-color: pink; /* Change the background color to pink */
+    margin: 0;
+  }
+  
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: purple;
+    border-width: 5px;
+    width: 3%;
+  }
+  
+  div {
+    background-color: #a4ebf3;
+  }
+  
+  /**************************CLASS SELECTORS**************************/
