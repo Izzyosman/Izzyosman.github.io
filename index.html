@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      name="description"
-      content="This website shows Jeffrey's portfolio and a brief description about him."
-    />
-    <title>Isir Osman | Portfolio</title>
+    <meta name="description" content="My Simple Portfolio" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: pink;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding: 50px;
+      }
+
+      button {
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px;
+      }
+
+      button:hover {
+        background-color: #ff1493;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <h1>Hi, I'm Isir.</h1>
-      <h2><em>Software developer.</em></h2>
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <button onclick="showName()">Name</button>
+      <button onclick="showSkills()">Skills</button>
+      <button onclick="showProjects()">Projects</button>
+      <div id="content" style="display: none"></div>
     </div>
-    <h2 id="about">ABOUT ME</h2>
-    <p>
-      Dynamic tech professional passionate about technology, development, and
-      innovation.
-    </p>
-    <hr />
-    <h3>Technologies I have experience with.</h3>
-    <!-- Removed the images and replaced them with text -->
-    <p>JavaScript, Express</p>
-    <h3>My Projects</h3>
-    <p>Trip App</p>
-    <p>I created a trip app for my Bright Path's Foundation Capstone.</p>
-    <div
-      style="position: relative; padding-bottom: 48.12500000000001%; height: 0"
-    >
-      <iframe
-        src="https://www.loom.com/embed/1bdd2807ae38435fa87cddfa5452d14f?sid=3607684a-89f2-47c2-883e-a49fdcbaca0b"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 50%; height: 50%"
-      ></iframe>
-    </div>
-    <hr />
-    <hr />
-    <div class="bottom_container">
-      <a class="footer-link" href="https://www.linkedin.com/in/jeffreyv"
-        ><img
-          src="https://github.com/JeffreybVilla/Portfolio/blob/main/images/LinkedIn.png?raw=true"
-          alt="Jeffrey's LinkedIn Page"
-          width="30"
-          height="30"
-      /></a>
-      <a
-        class="footer-link"
-        href="https://github.com/JeffreybVilla?tab=repositories"
-        ><img
-          src="https://github.com/JeffreybVilla/Portfolio/blob/main/images/github.png?raw=true"
-          alt="Jeffrey's Github Portfolio"
-          width="30"
-          height="30"
-      /></a>
-      <a href="mailto:JeffreybVilla@gmail.com"
-        ><img
-          src="https://github.com/JeffreybVilla/Portfolio/blob/main/images/email.png?raw=true"
-          alt="Contact Jeffrey"
-          width="30"
-          height="30"
-      /></a>
-    </div>
+
+    <script>
+      function showName() {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("content").innerHTML =
+          "<p>My Name: Your Name</p>";
+      }
+
+      function showSkills() {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("content").innerHTML =
+          "<p>My Skills: HTML, CSS, JavaScript, etc.</p>";
+      }
+
+      function showProjects() {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("content").innerHTML =
+          "<p>My Projects: Project 1, Project 2, etc.</p>";
+      }
+
+      <div style="position: relative; padding-bottom: 48.12500000000001%; height: 0;">
+        <iframe
+          src="https://www.loom.com/embed/1bdd2807ae38435fa87cddfa5452d14f?sid=e747c47e-33ab-4b98-b31d-d6a1026174d4"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        ></iframe>
+      </div>;
+    </script>
   </body>
 </html>
+
+<head>
+  <!-- ... other head elements ... -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
