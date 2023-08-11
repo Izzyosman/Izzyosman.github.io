@@ -1,14 +1,36 @@
-// Add an event listener to wait for the DOM to be ready
-document.addEventListener("DOMContentLoaded", function () {
-    // Navigation smooth scrolling
-    const navLinks = document.querySelectorAll("nav ul li a");
-    navLinks.forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute("href");
-        document.querySelector(targetId).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
+// jQuery script to nav scroll to section
+
+$(document).ready(function(){
+    $('.nav li a').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname) {
+        var $target = $(this.hash);
+        $target = $target.length && $target
+        || $('[name=' + this.hash.slice(1) +']');
+        if ($target.length) {
+          var targetOffset = $target.offset().top;
+          $('html,body')
+          .animate({scrollTop: targetOffset}, 1000);
+         return false;
+        }
+      }
+    });
+  });
+  
+  //jQuery script to page-scroll & animate fa-icon
+  
+  $(document).ready(function() { 
+    $('a.page-scroll').click(function() {  
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')   && location.hostname == this.hostname) {   
+        var $target = $(this.hash);   
+        $target = $target.length && $target    || $('[name=' + this.hash.slice(1) + ']');   
+        if ($target.length) {    
+          var targetOffset = $target.offset().top;    
+          $('html,body')    .animate({
+            scrollTop: targetOffset
+          }, 1000);    
+          return false;   
+        }  
+      } 
     });
   });
